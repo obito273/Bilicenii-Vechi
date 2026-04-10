@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+header{
+    background: #485550;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+navbar a:hover {
+    color: #f4f6f0;
+    text-decoration: underline 1px;
+}
+
+footer {
+    min-height: 80px;
+    background: #485550;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 30px;
+}
+
+li {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(#c0eb6a, #c0eb6a);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: "Dancing Script", cursive;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+section {
+    padding: 90px 15%;
+}
+
+.logo {
+    height: 50px;
+}
+
+#index {
+    background:  linear-gradient(rgba(46, 46, 46, 0.519), rgba(49, 49, 49, 0.459)), url('../images/index.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.index-info {
+    margin-top: 25vh;
+    text-align: center;
+}
+
+.index-info h1 {
+    font-size: 350%;
+    color: white;
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #485550ab;
+}
+
+.link-index {
+    color: white;
+    text-decoration: underline #c0eb6a 2px;
+    font-size: 20px;
+}
+
+.link-index:hover {
+    color: #c0eb6a;
+}
+
+.centered {
+    text-align: center;
+}
+
+.vframe {
+    width: 100%;
+    height: 30vw;
+    border: 2px solid #c0eb6a;
+    border-radius: 5px;
+}
+
+.loc {
+    overflow: auto;
+    border-bottom: 5px #c0eb6a dashed;
+    margin-bottom: 15px;
+}
+
+.loc img {
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.trad {
+    overflow: auto;
+    border-bottom: 5px #e51f10da dashed;
+    margin-bottom: 15px;
+}
+
+.trad img {
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border: 3px solid #485550;
+    border-radius: 10%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.harta {
+    width: 100%;
+    height: 45vh;
+    border: 2px solid #f4f6f0;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    overflow: auto;
+    object-fit: cover;
+    float: left;
+    padding: 0px 10px;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0px 10px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.contacte, .cform {
+    border: 2px solid #e1eabe;
+    border-radius: 5px;
+    background-color: #e1eabe65;
+    padding: 5px 5%;
+    height: 350px;
+    margin-bottom: 15px;
+}
+
+.cform input, .cform textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 90px 10px ;
+    }
+
+    .index-info h1 {
+        font-size: 250%;
+    }
+
+    .vframe {
+        height: 55vw;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    navbar a {
+        display: none;
+    }
+
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    navbar {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
